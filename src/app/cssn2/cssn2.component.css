@@ -1,0 +1,40 @@
+.main{
+    width: 100%;
+    display: flex;
+}
+
+.contain{
+    width: 25%;
+    position: relative; /*為了將字體與圖片放在同一個地方。將容器當作對齊點*/
+
+}
+
+.contain img{
+    width: 100%;
+}
+
+.contain .text{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0; /*透明度*/
+    transition:  .8s; /*動畫時間*/
+    display: flex; /*為了裡面的text的字做到直行排序*/
+    flex-direction: column; 
+    justify-content: center;
+}
+
+.contain:hover .text{
+    opacity: 0.8; /*在滑動到contain元素能夠顯示出text裡面的字*/
+}
+
+.contain .text h2{
+ font-size: 36px;
+ color: yellowgreen;
+}
+
+.contain .text p{
+    font-size: 24px;
+   }
