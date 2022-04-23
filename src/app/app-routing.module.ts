@@ -19,8 +19,6 @@ const routes: Routes = [
   { path: 'cssn7', component: Cssn7Component },
   { path: 'cssn8', component: Cssn8Component },
 
-];
-
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
