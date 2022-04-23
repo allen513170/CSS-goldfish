@@ -8,6 +8,9 @@ import { Cssn1Component } from './cssn1/cssn1.component';
 import { Cssn3Component } from './cssn3/cssn3.component';
 import { Cssn4Component } from './cssn4/cssn4.component';
 import { Cssn5Component } from './cssn5/cssn5.component';
+import { Cssn6Component } from './cssn6/cssn6.component';
+import { Cssn7Component } from './cssn7/cssn7.component';
+import { Cssn8Component } from './cssn8/cssn8.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { Cssn5Component } from './cssn5/cssn5.component';
     Cssn1Component,
     Cssn3Component,
     Cssn4Component,
-    Cssn5Component
+    Cssn5Component,
+    Cssn6Component,
+    Cssn7Component,
+    Cssn8Component
   ],
   imports: [
     BrowserModule,
