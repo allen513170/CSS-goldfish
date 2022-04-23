@@ -1,0 +1,28 @@
+.header {
+    background: linear-gradient(0deg, #fe70d8, #3713c1);
+    max-height: 1200px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    height: 100px;
+    width: 100px;
+}
+
+.image img {
+    height: 100%;
+}
+
+.header-nav a {
+    color: #fff;
+    padding: 20px;
+}
+
+.header-nav a:nth-child(3) {
+    margin-left: 100px;
+}

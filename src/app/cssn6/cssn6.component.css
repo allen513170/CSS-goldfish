@@ -1,0 +1,52 @@
+.footer {
+    padding: 150px 0 0;
+    background: linear-gradient(-20deg, #3f5494, #08c7a5);
+}
+
+.footer .container {
+    display: flex;
+    width: 1200px;
+    margin: auto;
+    color: #fff;
+}
+
+.item {
+    width: 0;
+    flex-grow: 1;
+    margin: 0 20px;
+}
+
+.item .submenu {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.footer-bottom {
+    background-color: #3e5293;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.submenu input[type=submit] {
+    background-color: #3f5494;
+    color: #fff;
+    border: none;
+}
+
+.item nav {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+.item h2 {
+    border-bottom: 1px dotted #fff;
+}
+
+.item nav a {
+    padding: 3px 0;
+    color: #fff;
+}
