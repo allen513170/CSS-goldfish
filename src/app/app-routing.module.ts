@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { Cssn1Component } from './cssn1/cssn1.component';
+import { Cssn17Component } from './cssn17/cssn17.component';
 import { Cssn2Component } from './cssn2/cssn2.component';
 import { Cssn3Component } from './cssn3/cssn3.component';
 import { Cssn4Component } from './cssn4/cssn4.component';
@@ -8,6 +9,7 @@ import { Cssn5Component } from './cssn5/cssn5.component';
 import { Cssn6Component } from './cssn6/cssn6.component';
 import { Cssn7Component } from './cssn7/cssn7.component';
 import { Cssn8Component } from './cssn8/cssn8.component';
+import { Cssn9Component } from './cssn9/cssn9.component';
 
 const routes: Routes = [
   { path: 'cssn1', component: Cssn1Component },
@@ -18,6 +20,10 @@ const routes: Routes = [
   { path: 'cssn6', component: Cssn6Component },
   { path: 'cssn7', component: Cssn7Component },
   { path: 'cssn8', component: Cssn8Component },
+  { path: 'cssn9', component: Cssn9Component },
+  { path: 'cssn17', component: Cssn17Component },
+
+]
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
