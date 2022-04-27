@@ -8,7 +8,7 @@ import { FormBuilder, FormGroup, NgForm } from '@angular/forms';
 })
 export class Cssn17Component implements OnInit {
 
-  myForm:any;  
+  myForm:any;
 
   constructor(
     public fb: FormBuilder
@@ -21,22 +21,14 @@ export class Cssn17Component implements OnInit {
     })
     this.myForm.valueChanges.subscribe((e: any)=>{
       console.log(e)
-      console.log(this.myForm)
     })
 
   }
 
-  onSubmit(event: any) {
-    console.log(event);  // false
+  onSubmit() {
+    console.log(this.myForm.value);  // false
   }
 
-  onOk(){
-    console.log("OK")
-  }
 
-  onkeydown(event: any){
-    if(event.key=="Enter"){
-      this.onOk()
-    }
-  }
+
 }

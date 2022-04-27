@@ -14,6 +14,7 @@ import { Cssn7Component } from './cssn7/cssn7.component';
 import { Cssn8Component } from './cssn8/cssn8.component';
 import { Cssn9Component } from './cssn9/cssn9.component';
 import { Cssn17Component } from './cssn17/cssn17.component';
+import { Cssn10Component } from './cssn10/cssn10.component';
 
 @NgModule({
   declarations: [
@@ -27,10 +28,11 @@ import { Cssn17Component } from './cssn17/cssn17.component';
     Cssn7Component,
     Cssn8Component,
     Cssn9Component,
-    Cssn17Component
+    Cssn17Component,
+    Cssn10Component
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     ReactiveFormsModule
   ],

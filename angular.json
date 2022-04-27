@@ -20,7 +20,7 @@
                 "build": {
                     "builder": "@angular-devkit/build-angular:browser",
                     "options": {
-                        "outputPath": "dist/gold-fish-css-1",
+                        "outputPath": "dist/GoldFishCSS-1/browser",
                         "index": "src/index.html",
                         "main": "src/main.ts",
                         "polyfills": "src/polyfills.ts",
@@ -98,6 +98,64 @@
                         ],
                         "scripts": []
                     }
+                },
+                "server": {
+                    "builder": "@angular-devkit/build-angular:server",
+                    "options": {
+                        "outputPath": "dist/GoldFishCSS-1/server",
+                        "main": "server.ts",
+                        "tsConfig": "tsconfig.server.json"
+                    },
+                    "configurations": {
+                        "production": {
+                            "outputHashing": "media",
+                            "fileReplacements": [
+                                {
+                                    "replace": "src/environments/environment.ts",
+                                    "with": "src/environments/environment.prod.ts"
+                                }
+                            ]
+                        },
+                        "development": {
+                            "optimization": false,
+                            "sourceMap": true,
+                            "extractLicenses": false
+                        }
+                    },
+                    "defaultConfiguration": "production"
+                },
+                "serve-ssr": {
+                    "builder": "@nguniversal/builders:ssr-dev-server",
+                    "configurations": {
+                        "development": {
+                            "browserTarget": "GoldFishCSS-1:build:development",
+                            "serverTarget": "GoldFishCSS-1:server:development"
+                        },
+                        "production": {
+                            "browserTarget": "GoldFishCSS-1:build:production",
+                            "serverTarget": "GoldFishCSS-1:server:production"
+                        }
+                    },
+                    "defaultConfiguration": "development"
+                },
+                "prerender": {
+                    "builder": "@nguniversal/builders:prerender",
+                    "options": {
+                        "routes": [
+                            "/"
+                        ]
+                    },
+                    "configurations": {
+                        "production": {
+                            "browserTarget": "GoldFishCSS-1:build:production",
+                            "serverTarget": "GoldFishCSS-1:server:production"
+                        },
+                        "development": {
+                            "browserTarget": "GoldFishCSS-1:build:development",
+                            "serverTarget": "GoldFishCSS-1:server:development"
+                        }
+                    },
+                    "defaultConfiguration": "production"
                 }
             }
         }
