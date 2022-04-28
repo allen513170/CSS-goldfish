@@ -15,6 +15,8 @@ import { Cssn8Component } from './cssn8/cssn8.component';
 import { Cssn9Component } from './cssn9/cssn9.component';
 import { Cssn17Component } from './cssn17/cssn17.component';
 import { Cssn10Component } from './cssn10/cssn10.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { Cssn11Component } from './cssn11/cssn11.component';
 
 @NgModule({
   declarations: [
@@ -29,12 +31,15 @@ import { Cssn10Component } from './cssn10/cssn10.component';
     Cssn8Component,
     Cssn9Component,
     Cssn17Component,
-    Cssn10Component
+    Cssn10Component,
+    Cssn11Component
+
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
