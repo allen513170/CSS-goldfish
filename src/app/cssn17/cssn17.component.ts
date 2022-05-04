@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, NgForm } from '@angular/forms';
+import { HeroService } from '../hero.service';
 
 @Component({
   selector: 'app-cssn17',
@@ -8,10 +9,11 @@ import { FormBuilder, FormGroup, NgForm } from '@angular/forms';
 })
 export class Cssn17Component implements OnInit {
 
-  myForm:any;
+  myForm: any;
 
   constructor(
-    public fb: FormBuilder
+    public fb: FormBuilder,
+    public service: HeroService
   ) { }
 
   ngOnInit(): void {
@@ -19,13 +21,16 @@ export class Cssn17Component implements OnInit {
       name: '',
       password: ''
     })
-    this.myForm.valueChanges.subscribe((e: any)=>{
+    this.myForm.valueChanges.subscribe((e: any) => {
       console.log(e)
     })
 
   }
 
   onSubmit() {
+    this.service.setId("123");
+    console.log(this.service.getId())
+
     console.log(this.myForm.value);  // false
   }
 

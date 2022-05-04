@@ -1,15 +1,20 @@
 import { Component, OnInit } from '@angular/core';
+import { HeroService } from '../hero.service';
 
 @Component({
   selector: 'app-cssn10',
   templateUrl: './cssn10.component.html',
-  styleUrls: ['./cssn10.component.css']
+  styleUrls: ['./cssn10.component.css'],
+  providers: [
+    HeroService
+  ]
 })
 export class Cssn10Component implements OnInit {
 
-  constructor() { }
+  constructor(public service:HeroService) { }
 
   ngOnInit(): void {
+    console.log(this.service.getId())
   }
 
 }

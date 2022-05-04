@@ -18,6 +18,7 @@ import { Cssn10Component } from './cssn10/cssn10.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { Cssn11Component } from './cssn11/cssn11.component';
 import { Cssn13Component } from './cssn13/cssn13.component';
+import { Cssn14Component } from './cssn14/cssn14.component';
 
 @NgModule({
   declarations: [
@@ -34,8 +35,8 @@ import { Cssn13Component } from './cssn13/cssn13.component';
     Cssn17Component,
     Cssn10Component,
     Cssn11Component,
-    Cssn13Component
-
+    Cssn13Component,
+    Cssn14Component
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),

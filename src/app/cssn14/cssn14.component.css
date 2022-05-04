@@ -1,0 +1,83 @@
+.wrap {
+    height: 100%;
+    width: 1000px;
+    background-color: beige;
+}
+
+.sidemenu {
+    position: relative;
+    width: 300px;
+    height: 100%;
+    padding: 50px 0;
+    box-sizing: border-box;
+    background: linear-gradient(0deg, #3381b0, #c2196c);
+    display: flex;
+    flex-direction: column;
+    box-shadow: 8px 0px 15px hsla(240, 40%, 15%, .6);
+    transform: translateX(-100%);
+    transition: .3s;
+}
+
+#menu-switch {
+    display: none;
+}
+
+.sidemenu form {
+    display: flex;
+    margin: 0 10px;
+    margin-bottom: 50px;
+}
+
+.sidemenu label {
+    position: absolute;
+    width: 40px;
+    height: 80px;
+    background-color: #000;
+    color: #fff;
+    line-height: 80px;
+    text-align: center;
+    right: -40px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    transform: scale(-1);
+    transition: .3s;
+}
+
+#menu-switch:checked+.sidemenu {
+    transform: translateX(0);
+}
+
+#menu-switch:checked+.sidemenu label {
+    transform: scale(1);
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    position: relative;
+}
+
+nav a+a::before {
+    content: "";
+    border-top: 1px solid #ccc;
+    left: 10px;
+    right: 10px;
+    top: 0px;
+    position: absolute;
+}
+
+nav a fa-icon {
+    margin-right: -1.1em;
+    transform: scale(0);
+    display: none;
+    transition: .3s;
+}
+
+nav a:hover fa-icon {
+    margin-right: 0em;
+    transform: scale(1);
+    display: inline;
+}
