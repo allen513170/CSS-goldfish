@@ -5,9 +5,7 @@ import { HeroService } from '../hero.service';
   selector: 'app-cssn10',
   templateUrl: './cssn10.component.html',
   styleUrls: ['./cssn10.component.css'],
-  providers: [
-    HeroService
-  ]
+
 })
 export class Cssn10Component implements OnInit {
 

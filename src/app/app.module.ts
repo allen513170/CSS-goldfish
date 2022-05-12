@@ -20,6 +20,8 @@ import { Cssn11Component } from './cssn11/cssn11.component';
 import { Cssn13Component } from './cssn13/cssn13.component';
 import { Cssn14Component } from './cssn14/cssn14.component';
 import { Cssn15Component } from './cssn15/cssn15.component';
+import { HeroService } from './hero.service';
+import { Cssn16Component } from './cssn16/cssn16.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +40,8 @@ import { Cssn15Component } from './cssn15/cssn15.component';
     Cssn11Component,
     Cssn13Component,
     Cssn14Component,
-    Cssn15Component
+    Cssn15Component,
+    Cssn16Component
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
@@ -46,7 +49,7 @@ import { Cssn15Component } from './cssn15/cssn15.component';
     ReactiveFormsModule,
     FontAwesomeModule
   ],
-  providers: [],
+  providers: [HeroService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
