@@ -8,6 +8,7 @@ import { Cssn14Component } from './cssn14/cssn14.component';
 import { Cssn15Component } from './cssn15/cssn15.component';
 import { Cssn16Component } from './cssn16/cssn16.component';
 import { Cssn17Component } from './cssn17/cssn17.component';
+import { Cssn18Component } from './cssn18/cssn18.component';
 import { Cssn2Component } from './cssn2/cssn2.component';
 import { Cssn3Component } from './cssn3/cssn3.component';
 import { Cssn4Component } from './cssn4/cssn4.component';
@@ -35,6 +36,7 @@ const routes: Routes = [
   { path: 'cssn16', component: Cssn16Component },
 
   { path: 'cssn17', component: Cssn17Component },
+  { path: 'cssn18', component: Cssn18Component },
 
 ]
 

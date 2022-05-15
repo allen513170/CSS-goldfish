@@ -1,0 +1,82 @@
+.wrap {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dialogue {
+    width: 500px;
+    padding: 20px;
+    box-shadow: 0 0 10px #3e92cc;
+    background-color: #f4f5f7;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.user {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.user .avatar {
+    width: 60px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.user .pic {
+    border-radius: 50%;
+}
+
+.user .txt {
+    padding: 16px;
+    background-color: #ccc;
+    border-radius: 10px;
+}
+
+.user .pic img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+
+.remote .txt {
+    margin-left: 20px;
+    background-color: #fff;
+    color: #a1b4c5;
+    position: relative;
+
+}
+
+.local {
+    align-self: flex-end;
+}
+
+.local .txt {
+    margin-right: 20px;
+    order: -1;
+    background-color: #3e92cc;
+    color: #fff;
+    position: relative;
+}
+
+.local .txt::before,
+.remote .txt::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+}
+
+.remote .txt::before {
+    border-right: 10px solid #fff;
+    left: -10px;
+}
+
+.local .txt::before {
+    border-left: 10px solid #3e92cc;
+    right: -10px;
+}

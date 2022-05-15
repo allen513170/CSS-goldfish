@@ -22,6 +22,7 @@ import { Cssn14Component } from './cssn14/cssn14.component';
 import { Cssn15Component } from './cssn15/cssn15.component';
 import { HeroService } from './hero.service';
 import { Cssn16Component } from './cssn16/cssn16.component';
+import { Cssn18Component } from './cssn18/cssn18.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { Cssn16Component } from './cssn16/cssn16.component';
     Cssn13Component,
     Cssn14Component,
     Cssn15Component,
-    Cssn16Component
+    Cssn16Component,
+    Cssn18Component
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),

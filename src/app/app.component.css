@@ -6,3 +6,6 @@
   margin: 15px;
 }
 
+html.body{
+  height: 100%;
+}
