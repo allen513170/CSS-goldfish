@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { ExtraOptions, RouterModule, Routes } from '@angular/router';
 import { Cssn1Component } from './cssn1/cssn1.component';
 import { Cssn10Component } from './cssn10/cssn10.component';
 import { Cssn11Component } from './cssn11/cssn11.component';
@@ -17,8 +17,14 @@ import { Cssn6Component } from './cssn6/cssn6.component';
 import { Cssn7Component } from './cssn7/cssn7.component';
 import { Cssn8Component } from './cssn8/cssn8.component';
 import { Cssn9Component } from './cssn9/cssn9.component';
+import { LoginComponent } from './share/login/login.component';
+import { MainComponent } from './share/main/main.component';
 
 const routes: Routes = [
+  { path: 'login', component: LoginComponent },
+  { path: 'main', component: MainComponent },
+
+
   { path: 'cssn1', component: Cssn1Component },
   { path: 'cssn2', component: Cssn2Component },
   { path: 'cssn3', component: Cssn3Component },
@@ -40,9 +46,13 @@ const routes: Routes = [
 
 ]
 
+
 @NgModule({
+  
   imports: [RouterModule.forRoot(routes, {
-    initialNavigation: 'enabledBlocking'
+    initialNavigation: 'enabledBlocking',
+    anchorScrolling: 'enabled'
+
 })],
   exports: [RouterModule]
 })

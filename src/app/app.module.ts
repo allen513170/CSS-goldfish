@@ -23,6 +23,7 @@ import { Cssn15Component } from './cssn15/cssn15.component';
 import { HeroService } from './hero.service';
 import { Cssn16Component } from './cssn16/cssn16.component';
 import { Cssn18Component } from './cssn18/cssn18.component';
+import { ShareModule } from './share/share.module';
 
 @NgModule({
   declarations: [
@@ -49,7 +50,8 @@ import { Cssn18Component } from './cssn18/cssn18.component';
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     ReactiveFormsModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    ShareModule
   ],
   providers: [HeroService],
   bootstrap: [AppComponent]
