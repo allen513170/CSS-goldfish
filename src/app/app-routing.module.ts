@@ -23,8 +23,6 @@ import { MainComponent } from './share/main/main.component';
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'main', component: MainComponent },
-
-
   { path: 'cssn1', component: Cssn1Component },
   { path: 'cssn2', component: Cssn2Component },
   { path: 'cssn3', component: Cssn3Component },
@@ -40,10 +38,12 @@ const routes: Routes = [
   { path: 'cssn14', component: Cssn14Component },
   { path: 'cssn15', component: Cssn15Component },
   { path: 'cssn16', component: Cssn16Component },
-
   { path: 'cssn17', component: Cssn17Component },
   { path: 'cssn18', component: Cssn18Component },
-
+  {
+    path: "**",
+    component: MainComponent, // 萬用路徑，路由沒有比對到，永遠會執行
+  },
 ]
 
 
